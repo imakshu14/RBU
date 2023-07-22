@@ -163,3 +163,25 @@ console.log(dummyArray)
 // let twoDArray = [10,20,30,40,50,60,70,80,90]
  let twoDArray = [ [],[],[] ]
 console.log(twoDArray)
+
+//2. JS OBJECTS - { } :-
+//let myObj = {key1 :value1 , key2 :value2 }
+    let myObj = new Object()
+    myObj.name = 'User One'
+    myObj.email = 'userone@service.com'
+    myObj.password = 'examplepwd'
+    myObj.isEmployed = true
+    myObj.hobbies = ['Music', 'Reading Books', 'Travelling']
+    myObj.address = {
+        street: 'Street - 1',
+        city: 'Kharar',
+        state: 'Punjab',
+        pincodes: [1234, 5678]
+    }
+
+
+console.log(myObj)
+console.log('HI,this is user ${myObj.name}, my email is ${myObj.email}& my password is ${myObj.password')
+console.log(myObj.hobbies[0])
+// console.log(myObj.address.city)
+// console.log(myObj.address.pincodes[1]);
