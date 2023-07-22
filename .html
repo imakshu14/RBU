@@ -1,113 +1,200 @@
 <!DOCTYPE html>
-<html> 
-    <!-- Meta Data of the Document -->
+<html>
     <head>
-        <title>HTML Basics - </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Bootstrap Document!</title>
     </head>
     <body>
-        <!-- PLAIN TEXT :- This is a sample text. This is a change. Another change
-        This is a new line plain text. -->
-        <!-- HTML5 Block Level Elements -> All the HTML elemensts have some default styles. -->
-        <!-- Heading Elements (h1 - h6) -> textSize(h1) > textSize(h6) -->
-        <h1>Introduction to HTML</h1>
-        <!-- <h2>Heading - 2</h2>
-        <h3>Heading - 3</h3>
-        <h4>Heading - 4</h4>
-        <h5>Heading - 5</h5>
-        <h6>Heading - 6</h6> -->
+        <!-- 1. Download Bootstrap 3 -->
+        <!-- 2. Installing BS (using npm) -->
+        <!-- 3. Using Bootstrap CDN -->
+        <div class="container-fluid">
+            <h1 id="my-header" class="page-header">Welcome to Bootstrap!</h1>
+        </div>
+        <div class="container">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est sunt rerum consectetur ipsam, amet animi exercitationem explicabo quasi. Eius optio aperiam placeat pariatur neque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam minus praesentium odio expedita earum quo! Saepe modi consectetur voluptatum facilis est maxime eaque. Et quod quos id quasi veniam doloremque in earum animi dolores, tenetur excepturi mollitia eveniet provident modi quis neque nostrum magni magnam! Ab vero iure maiores quae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores quaerat doloremque commodi nobis officia quam qui, dolorem cum illo aliquam veniam deleniti est maxime in velit nulla similique consectetur facere! Saepe facere ea, obcaecati amet excepturi sed est odio architecto dolore, voluptates ducimus nulla in cum consectetur molestiae nesciunt, eligendi animi expedita impedit soluta quia labore ut? Voluptate, dolorem.</p>
+            <hr />
+            <h3>Alignments and Texts - </h3>
+            <p class="text-left text-capitalize">left align</p>
+            <p class="text-center">CENTER ALIGN</p>
+            <p class="text-right">RIGHT ALIGN</p>
+            <hr />
+            <h3>Contextual Classes - </h3>
+            <!-- primary -> blue, success -> green, danger -> red, muted -> gray, info -> light-blue, warning -> yellow/orangish -->
+            <p class="text-primary bg-warning">Contextual Class - Primary</p>
+            <p style="color: purple;" class="text-success">Contextual Class - Success</p>
+            <p class="text-danger">Contextual Class - Danger</p>
+            <p class="text-info">Contextual Class - Info</p>
+            <p class="text-warning">Contextual Class - Warning</p>
+            <p class="text-muted">Contextual Class - Muted</p>
+            <hr />
+            <p class="bg-primary">Contextual Class - Primary</p>
+            <p class="bg-success">Contextual Class - Success</p>
+            <p class="bg-danger">Contextual Class - Danger</p>
+            <p class="bg-info">Contextual Class - Info</p>
+            <p class="bg-warning">Contextual Class - Warning</p>
+            <!-- NOT POSSIBLE :- <p class="bg-muted">Contextual Class - Muted</p> -->
+            <hr />
+            <h3>Buttons / Submits & Anchors - </h3>
+            <button class="btn btn-primary">Button</button>
+            <input class="btn btn-success" type="submit" value="SUBMIT">
+            <a class="btn btn-danger" href="#">ANCHOR</a>
+            <h5>Button Sizes - </h5>
+            <button class="btn btn-primary btn-sm">Button - 1</button>
+            <button class="btn btn-primary btn-lg">Button - 2</button>
+            <button class="btn btn-primary btn-xs">Button - 3</button>
+            <hr />
+            <h3>Tables - </h3>
+            <table class="table table-bordered table-condensed table-hover">
+                <tr>
+                    <!-- <td><b>Emp_id</b></td> -->
+                    <th>Emp_ID</th>
+                    <th>Emp_Name</th>
+                    <th>Emp Email</th>
+                    <th>Emp Designation</th>
+                </tr>
+                <tr>
+                    <!-- <td><b>Emp_id</b></td> -->
+                    <td>00123456</td>
+                    <td>Employee-1</td>
+                    <td>employeeOne@email.com</td>
+                    <td>SDE-1</td>
+                </tr>
+                <tr>
+                    <td>00123456</td>
+                    <td>Employee-2</td>
+                    <td>employeeTwo@email.com</td>
+                    <td>SDE-2</td>
+                </tr>
+                <tr>
+                    <td>004533456</td>
+                    <td>Employee-3</td>
+                    <td>employeeThree@email.com</td>
+                    <td>SDE-Intern</td>
+                </tr>
+             </table>
+        </div>
+        <hr />
+        <div class="container-fluid">
+            <h3>Forms :- </h3>
+        </div> <br />
+        <div class="container">
+            <form style="border: 2px double black; padding: 20px;">
+                <!-- <span>Your Name : </span><input type=""  /> -->
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="enter your name..." /> 
+                </div>
+                <!-- Email :- username@hostname.com -->
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="enter your email..." />
+                </div>
+                 <div class="form-group">
+                    <input class="form-control" type="password" placeholder="enter your password..." /> 
+                 </div>
+                <div class="form-group">
+                    <input class="form-control" type="date" /> 
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="range" />
+                </div> 
+                <label>Enter you gender - </label>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <label>Upload you CV - </label>
+                    <input class="form-control" type="file" /> 
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success btn-lg" type="submit" value="Sign Up" />
+                </div>
+             </form>
+        </div>
 
-        <!-- Paragraphs -->
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ad <b>fugit nam aliquid</b> tempore dolores aspernatur possimus. Aliquam ipsa laudantium ea. <br /> Ducimus, nam nesciunt. <i>Distinctio suscipit</i> optio consectetur officiis dolor placeat hic! Nobis expedita, eveniet <span style="background-color: yellow;">veniam voluptatibus amet</span>, cumque corporis illum enim ipsa dolores et architecto fugit sequi deserunt consectetur quasi optio ducimus voluptatum excepturi, quo quis? Dignissimos, vel blanditiis?</p> <p>Lorem, ipsum dolor sit amet <u>consectetur adipisicing elit</u>. Repellat nobis ratione iusto unde minus porro impedit architecto adipisci amet facilis quasi, molestias quam maxime ad!</p>
-    
+        <hr />
 
-    <h3>Lists - </h3>
-    <!-- Ordered List (ol) -->
-    <ol type="i">
-        <li>Item - 1</li>
-        <li>Item - 2</li>
-        <li>Item - 3</li>
-        <li>Item - 4</li>
-        <li>Item - 5</li>
-    </ol>
-    <!-- Unordered List (ul) -->
-    <ul>
-        <li>Item - 1</li>
-        <li>Item - 2</li>
-        <li>Item - 3</li>
-        <li>Item - 4</li>
-        <li>Item - 5</li>
-    </ul>
+        <div class="container-fluid"><h3>Navigation Bar :-</h3></div>
+        <div class="container">
+            <ul class="list-unstyled">
+                <li>Item - 1</li>
+                <li>Item - 2</li>
+                <li>Item - 3</li>
+                <li>Item - 4</li>
+                <li>Item - 5</li>
+            </ul>
 
-    <hr />
+            <ol style="display: flex; justify-content: space-between;" class="list-unstyled list-inline">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Products</a> </li>
+                <li> <a href="#">Contact</a> </li>
+                <li> <a href="#">About Us</a> </li>
+            </ol>
+        </div>
 
-    <h3>Anchors - </h3>
-    <!-- Link :-
-        1. Absolute Link
-        2. Relative Link (./ & ../)
-        3. Root Relative Link
-     -->
-    <!-- There exists elemets which donot require extra space for rendering, such elements are called INLINE ELEMENTS -->
-    <p>click <a href="https://www.google.com/" target="_blank">here</a> to go to Google.</p>
-    <p>click <a href="./assets/gfx100s_sample_04_thum-1.jpg">here</a> to see the image.</p>
-    <p>click <a href="./second.html">here</a> to visit to Page 2</p>
+        <hr />
 
-    <hr />
+        <div class="container-fluid">
+            <h3>Panels :-</h3>
+        </div>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 style="text-align: center;">Panel Heading</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                </div>
+            </div>
+        </div>
 
-    <!-- Self Ending Elements -->
-    <h3>Images - </h3>
-    <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Image One" />
-    <hr />
-    <img src="./assets/gfx100s_sample_04_thum-1.jpg" alt="Image - 2" />
-
-    <hr>
-
-    <h3>Tables - </h3>
-     <table border="1">
-        <tr>
-            <!-- <td><b>Emp_id</b></td> -->
-            <th>Emp_ID</th>
-            <th>Emp_Name</th>
-            <th>Emp Email</th>
-            <th>Emp Designation</th>
-        </tr>
-        <tr>
-            <!-- <td><b>Emp_id</b></td> -->
-            <td>00123456</td>
-            <td>Employee-1</td>
-            <td>employeeOne@email.com</td>
-            <td>SDE-1</td>
-        </tr>
-        <tr>
-            <td>00123456</td>
-            <td>Employee-2</td>
-            <td>employeeTwo@email.com</td>
-            <td>SDE-2</td>
-        </tr>
-        <tr>
-            <td>004533456</td>
-            <td>Employee-3</td>
-            <td>employeeThree@email.com</td>
-            <td>SDE-Intern</td>
-        </tr>
-     </table>
-
-     <hr />
-
-     <h3>HTML Signup Forms - </h3>
-     <form>
-        <!-- <span>Your Name : </span><input type=""  /> -->
-        <input type="text" placeholder="enter your name..." /> <br /> <br />
-        <!-- Email :- username@hostname.com -->
-        <input type="email" placeholder="enter your email..." /> <br /> <br />
-        <input type="password" placeholder="enter your password..." /> <br /> <br />
-        <input type="date" /> <br /> <br />
-        <input type="range" /> <br /> <br />
-        <label>Enter you gender - </label> <br /> <br />
-        <input type="checkbox" /> Male <br />
-        <input type="checkbox" /> Female <br />
-        <input type="checkbox" /> Others <br />
-     </form>
-
-    <div style="height: 250px;"></div>
-</body>
+        <hr />
+        <div class="container-fluid">
+            <h3>BS Grids :-</h3>
+        </div>
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- One row can have at max of 12 cols -->
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 style="text-align: center;">Panel Heading</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4 style="text-align: center;">Panel Heading</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h4 style="text-align: center;">Panel Heading</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 500px;"></div>
+    </body>
 </html>
