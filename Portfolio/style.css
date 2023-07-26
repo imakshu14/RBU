@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100;
+    background: fixed;
+    background:url(portfolio.jpg);
+    background-size: cover;
+    height: 100vh;  
+}
+.navbar{
+    width: 1500px;
+    height: 100px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: rgb(12, 185, 248) ;
+    font-size: 25px;
+    font-family: Arial sans-serif;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10  px;
+}
+.menu{
+    width: 400px;
+   float: right;
+    justify-content: space-between;
+    ;
+
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #00FFFF;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a.hover{
+    color:#ff7200;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+
+}
+
+
+
+
+
+
+
+    
